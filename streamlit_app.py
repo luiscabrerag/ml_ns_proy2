@@ -1,3 +1,4 @@
+!pip install joblib
 import streamlit as st
 import joblib
 
@@ -27,4 +28,3 @@ if st.button("Clasificar texto"):
         st.subheader("Resultado de la clasificación")
         st.markdown(f"**ODS predicho:** {nombre_ods} (código {pred})")
         st.markdown(f"**Probabilidad estimada:** {prob_ods:.2%}")
-    
